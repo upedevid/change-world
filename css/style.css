@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times;
+    background: linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/bookshelf.jpg) no-repeat center;
+    background-size: cover;
+}
+.container{
+    margin: auto;
+    padding: 2px;
+    width: 80%;
+    min-height: 500px;
+}
+.header{
+    width: 99%;
+    min-height: 10vh;
+    margin: 5px;
+    padding: 0px;
+}
+.icon{
+    width: 28%;
+    min-height: 10vh;
+    margin: 0;
+    padding: 0px;
+    float: left;
+    text-align: center;
+}
+.icon-h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    font-style: oblique;
+    font-size: 35px;
+    color: white;
+}
+nav ul{
+    width: 70%;
+    min-height: 10vh;
+    margin: 0;
+    padding: 5px;
+    float: right;
+    line-height: 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 20px 25px;
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: rgb(0, 255, 106);
+    transition: 1.5s;
+}
+.box{
+    width: 99%;
+    margin: auto;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    min-height: 40vh;
+    border: 1px solid black;
+    text-align: center;
+}
+.box-h1{
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+.box-p{
+    font-size: 25px;
+    color: white;
+}
+.btn-success{
+    background: linear-gradient(45deg,lime,lime);
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.btn-success:hover{
+    color: black;
+}
+@media (max-width:1400px){
+    .container{
+        width: 99%;
+    }
+}
+@media (max-width:1135px){
+    .icon{
+        width: 99%;
+        float: none;
+        text-align: left;
+    }
+    nav ul{
+        width: 99%;
+        float: none;
+    }
+}
+@media (max-width:800px){
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    .box-h1{
+        font-size: 45px;
+    }
+    .box-p{
+        font-size: 20px;
+    }
+}
